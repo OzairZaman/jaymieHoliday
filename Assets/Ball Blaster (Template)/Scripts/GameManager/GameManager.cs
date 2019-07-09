@@ -36,7 +36,7 @@ namespace BallBlast
             }
         }
         #endregion
-        private void StartGame()
+        public void StartGame()
         {
             IsGameStarted = true;
 
@@ -45,7 +45,7 @@ namespace BallBlast
                 GameStartedEvent();
             }
         }
-        private void FinishGame()
+        public void FinishGame()
         {
             IsGameFinished = true;
 
@@ -55,7 +55,7 @@ namespace BallBlast
             }
             //GameOver Thing Here Later!
         }
-        private void LoadLevel(int sceneIndex)
+        public void LoadLevel(int sceneIndex)
         {
             SceneManager.LoadScene(sceneIndex);
         }
